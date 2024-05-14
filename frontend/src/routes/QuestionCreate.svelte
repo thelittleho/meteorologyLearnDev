@@ -31,12 +31,16 @@
     <form method="post" class="my-3">
         <div class="mb-3">
             <label for="subject">제목</label>
+            <!-- title input -->
             <input type="text" class="form-control" bind:value="{subject}">
         </div>
         <div class="mb-3">
             <label for="content">내용</label>
+            <!-- content input -->
+            <!-- I want to fix MarkDown Editer -->
             <textarea class="form-control" rows="10" bind:value="{content}"></textarea>
         </div>
+        <!-- save button -->
         <button class="btn btn-primary" on:click="{post_question}">저장하기</button>
     </form>
 </div>
